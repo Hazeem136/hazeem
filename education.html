@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Education</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:#e9e6dd;
+      color: #e5e7eb;
+    }
+
+    /* Header */
+    header {
+      background: #000000;
+      padding: 10px 20px;
+      border-bottom: 1px solid #1e293b;
+      
+    }
+
+#clock {
+  color: #f57251;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+   
+    .container {
+    display: block;
+    min-height: calc(100vh - 140px);
+    }
+
+    .content {
+   max-width: 1000px;
+   margin: auto;
+
+    }
+.topnav {
+  background: #f57251;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 2px solid #000;
+}
+
+.topnav a {
+  text-decoration: none;
+}
+
+.topnav button {
+  background: #e9e6dd;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topnav button:hover {
+  background: #d6d2c4;
+}
+
+
+   
+    .sidebar {
+      width: 260px;
+      background:#f57251;
+      border-right: 1px solid #1e293b;
+      padding: 30px 20px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #000000;
+    }
+
+    .profile h2 {
+      margin: 15px 0 5px;
+      color: #f8fafc;
+    }
+
+    .profile span {
+      font-size: 13px;
+      color: #f0f8ff;
+    }
+
+    .menu button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      background:#e9e6dd;
+      border: 1px solid ;
+      border-radius: 8px;
+      color: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .menu button:hover {
+      background: #DCDCDC;
+      border-color: none;
+    }
+
+  
+    .content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #000000;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 900px;
+      color: #000000;
+    }
+
+    .p {
+      margin-top: 0;
+      color: #000000;
+      font-size: 22px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #1e293b;
+    }
+
+    /* Footer */
+    footer {
+      background: #020617;
+      border-top: 1px solid #1e293b;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+    .section { display: none; }
+    .section.active { display: block; }
+
+</style>
+</head>
+<body>
+
+<header>
+ <h1 id="C4">My Resume</h1>
+<div id="clock"></div>
+ </header>
+
+<nav class="topnav">
+   <a href="myresume.html"><button>Home</button></a>
+  <a href="about.html"><button>About Me</button></a>
+  <a href="education.html"><button>Education</button></a>
+  <a href="family.html"><button>Family</button></a>
+  <a href="hobby.html"><button>Hobby</button></a>
+  <a href="gallery1.html"><button>Gallery</button></a>
+  <a href="contact.html"><button>Contact</button></a>
+  <a href="experience.html"><button>Experience</button></a>
+</nav>
+
+<div class="container">
+
+<main class="content">
+    <div class="card">
+<img src="skmeru.jpg" width="150" height="150" style="float:left; margin-right: 15px; margin-bottom: 5px;" 
+<p style="margin-top: 5px;"><b>SEKOLAH KEBANGSAAN MERU JALAN TAP</b></p>
+<p style="margin-top: 5px;"><i>"At SMK Meru Jalan TAP, I was curious and eager to learn. I laughed with friends, discovered new things, and began to understand who I was."</i></p>
+<ul>
+  UPSR Result
+  <li>3C</li>
+  <li>3D</li>
+</ul> 
+<a href="https://ms.wikipedia.org/wiki/Sekolah_Kebangsaan_Meru" class="button">See More</a>
+    </div><br>
+
+<div class="card">
+ <img src="smkmeru.jpg" width="150" height="150" style="float:left; margin-right: 15px; margin-bottom: 5px;" 
+<p style="margin-top: 5px;"><b>SEKOLAH MENENGAH KEBANGSAAN MERU</b></p>
+<p style="margin-top: 5px;"><i>"During my high school years, I learned to be more confident and responsible. I faced harder challenges, but I never stopped trying."</i></p>
+<ul>
+  SPM Result
+  <li>4A</li>
+  <li>3B</li>
+</ul> 
+<a href="https://smkmeruklang.blogspot.com/p/sejarah-sekolah.html" class="button">See More</a>
+     </div><br>
+
+<div class="card">
+<img src="uitmcj.jpg" width="150" height="150" style="float:left; margin-right: 15px; margin-bottom: 5px;" 
+<p style="margin-top: 5px;"><b>UNIVERSITI TEKNOLOGI MARA, CAWANGAN JOHOR, KAMPUS SEGAMAT</b></p>
+<p style="margin-top: 5px;">Diploma in Information Management</p>
+<p style="margin-top: 5px;"><i>"In university, I became more independent. I learned to manage my time, take responsibility, and push myself to grow. University helped me discover my true potential."</i></p>
+<a href="https://uitm.edu.my/en/" class="button">See More</a>
+
+</div>
+<p><a href="#C4"class="button">Go Back</a></p>
+  </main>
+</div>
+  </main>
+
+</div>
+<script>
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    document.getElementById("clock").innerHTML =
+      hours + ":" + minutes + ":" + seconds;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+
+<footer>
+  © 2025 Your Name | Resume Website
+</footer>
+
+<script>
+  function show(id) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+
+</body>
+</html>

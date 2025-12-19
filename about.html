@@ -1,0 +1,409 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:#e9e6dd;
+      color: #000000;
+    }
+
+    header {
+      background: #000000;
+      padding: 10px 20px;
+      border-bottom: 1px solid #1e293b;
+    }
+
+#clock {
+  color: #f57251;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    .container {
+  display: block;
+  min-height: calc(100vh - 140px);
+}
+.content {
+  max-width: 1000px;
+  margin: auto;
+
+    }
+
+.topnav {
+  background: #f57251;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 2px solid #000;
+}
+
+.topnav a {
+  text-decoration: none;
+}
+
+.topnav button {
+  background: #e9e6dd;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topnav button:hover {
+  background: #d6d2c4;
+}
+
+    .sidebar {
+      width: 260px;
+      background:#f57251;
+      border-right: 1px solid #1e293b;
+      padding: 30px 20px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #000000;
+    }
+
+    .profile h2 {
+      margin: 15px 0 5px;
+      color: #ffffff;
+    }
+
+    .profile span {
+      font-size: 13px;
+      color: #f0f8ff;
+    }
+
+    .menu button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      background:#e9e6dd;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      color: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .menu button:hover {
+      background: #DCDCDC;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .card {
+      background: #c4ad9d;
+      border: 1px solid #000000;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 900px;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #2F4F4F;
+      font-size: 24px;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    footer {
+      background: #020617;
+      border-top: 1px solid #1e293b;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+
+.content {
+  padding: 50px 30px;
+}
+
+
+.card {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  border: none;
+  border-radius: 18px;
+  padding: 35px;
+  margin-bottom: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  color: #f5f5dc; 
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(245,114,81,0.35);
+}
+
+
+.card h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #f57251;
+  letter-spacing: 1px;
+  border-left: 5px solid #f57251;
+  padding-left: 15px;
+}
+
+/* Paragraph */
+.card p {
+  color: #e9e6dd;
+  font-size: 16px;
+}
+
+/* Image aesthetic */
+.card img {
+  border-radius: 16px;
+  border: 3px solid #f57251;
+  box-shadow: 0 10px 25px rgba(0,0,0,.4);
+}
+
+/* Table aesthetic */
+.card table {
+  border-collapse: collapse;
+  background: #121212;
+  color: #e9e6dd;
+}
+
+.card table td,
+.card table th {
+  border: 1px solid #333;
+}
+
+.card table th {
+  background: #f57251;
+  color: #000;
+}
+
+/* Spotify block */
+.block {
+  background: linear-gradient(135deg, #f57251, #ff8c5a);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+.block h3 {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+<header>
+<h1 id="C4">My Resume</h1>
+<div id="clock"></div>
+</header>
+
+<nav class="topnav">
+  <a href="myresume.html"><button>Home</button></a>
+  <a href="about.html"><button>About Me</button></a>
+  <a href="education.html"><button>Education</button></a>
+  <a href="family.html"><button>Family</button></a>
+  <a href="hobby.html"><button>Hobby</button></a>
+  <a href="gallery1.html"><button>Gallery</button></a>
+  <a href="contact.html"><button>Contact</button></a>
+  <a href="experience.html"><button>Experience</button></a>
+  
+</nav>
+
+
+<div class="container">
+
+ <main class="content">
+
+  <!-- ABOUT ME CARD -->
+  <div class="card">
+   <h3>About Me</h3>
+<img src="g.kopi.jpg" 
+     alt="My Photo"
+     width="180"
+     style="float:left; margin-right:20px; margin-bottom:10px; border-radius:12px; border:2px solid #2F4F4F;">
+
+<p>
+  Hello! My name is <b>Muhammad Hazeem</b>. I am a dedicated and motivated individual
+  with a strong interest in information management, digital systems, and technology.
+</p>
+
+<p>
+  I enjoy learning new things, especially in areas related to information organization,
+  web development, and digital content. I believe that continuous learning is the key
+  to personal and professional growth.
+</p>
+
+<p>
+  I am a responsible person who values discipline, teamwork, and time management.
+  Through my academic journey, I have learned how to adapt, solve problems, and
+  communicate effectively with others.
+</p>
+
+<div style="clear:both;"></div>
+</div>
+  
+
+  <br>
+
+  <!-- PERSONAL DETAILS -->
+  <div class="card">
+    <h3>Personal Details</h3>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+      <tr>
+        <td><b>Full Name</b></td>
+        <td>Muhammad Hazeem Bin Abdul Zalil</td>
+      </tr>
+      <tr>
+        <td><b>Date of Birth</b></td>
+        <td> 14 June 2005 </td>
+      </tr>
+      <tr>
+        <td><b>Nationality</b></td>
+        <td>Malaysian</td>
+      </tr>
+      <tr>
+        <td><b>Course</b></td>
+        <td>Diploma in Information Management</td>
+      </tr>
+    </table>
+  </div>
+
+  <br>
+
+  <!-- SKILLS TABLE -->
+  <div class="card">
+    <h3>Skills</h3>
+
+    <table border="1" cellpadding="12" cellspacing="0" width="100%">
+      <tr style="background-color:#2F4F4F; color:white;">
+        <th>Category</th>
+        <th>Skills</th>
+        <th>Level</th>
+      </tr>
+
+      <tr>
+        <td>Technical Skills</td>
+        <td>HTML, CSS, Basic</td>
+        <td>Intermediate</td>
+      </tr>
+
+      <tr>
+        <td>Information Skills</td>
+        <td>Cataloguing, Data Organization, Digital Records</td>
+        <td>Intermediate</td>
+      </tr>
+
+      <tr>
+        <td>Software Skills</td>
+        <td>Microsoft Word, PowerPoint, Excel</td>
+        <td>Advanced</td>
+      </tr>
+
+      <tr>
+        <td>Soft Skills</td>
+        <td>Teamwork, Communication, Time Management</td>
+        <td>Good</td>
+      </tr>
+    </table>
+  </div>
+
+  <br>
+
+  <!-- CAREER GOAL -->
+  <div class="block">
+    <h3>Favourite Playlist Song</h3>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/7o2LtCfYhsIKXDn18utQnf?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<p><a href="#C4"class="button">Go Back</a></p>
+  </main>
+
+    </div>
+
+</main>
+
+
+</div>
+<script>
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    document.getElementById("clock").innerHTML =
+      hours + ":" + minutes + ":" + seconds;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+<footer>
+  © 2025 Muhammad Hazeem | Resume Website
+</footer>
+
+</body>
+</html>
+
+

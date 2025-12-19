@@ -1,0 +1,330 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobby</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:#e9e6dd;
+      color: #000000;
+    }
+
+    header {
+      background: #000000;
+      padding: 10px 20px;
+      border-bottom: 1px solid #1e293b;
+    }
+
+#clock {
+  color: #f57251;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    .topnav {
+      background: #f57251;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+      border-bottom: 2px solid #000;
+    }
+
+    .topnav a {
+      text-decoration: none;
+    }
+
+    .topnav button {
+      background: #e9e6dd;
+      border: 1px solid #000;
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .topnav button:hover {
+      background: #d6d2c4;
+    }
+
+    .container {
+      min-height: calc(100vh - 140px);
+      padding: 40px 20px;
+    }
+/* ===== EXPERIENCE 2-CARD CINEMATIC ===== */
+
+.exp-card {
+  background: linear-gradient(135deg, #0b0b0b, #1b1b1b);
+  border-radius: 22px;
+  padding: 40px;
+  margin-bottom: 45px;
+  box-shadow: 0 30px 60px rgba(0,0,0,.45);
+  color: #f5f3ee;
+  position: relative;
+  overflow: hidden;
+}
+
+.exp-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(245,114,81,.2), transparent);
+  opacity: 0;
+  transition: .6s;
+}
+
+.exp-card:hover::before {
+  opacity: 1;
+}
+
+.exp-card h3 {
+  font-size: 30px;
+  color: #f57251;
+  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+}
+
+.exp-card p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #e9e6dd;
+  max-width: 850px;
+}
+
+/* Image row */
+.exp-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.exp-images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid rgba(245,114,81,.4);
+  transition: .4s;
+}
+
+.exp-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(245,114,81,.4);
+}
+.exp-card ol {
+  margin-top: 15px;
+  padding-left: 20px;
+  line-height: 1.9;
+}
+
+.exp-card ol li {
+  margin-bottom: 10px;
+  color: #e9e6dd;
+}
+
+.exp-card ol li::marker {
+  color: #f57251;
+  font-size: 18px;
+}
+
+
+
+    .content {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #000000;
+      border: 1px solid #000000;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #f57251;
+      font-size: 26px;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    /* Hobby Grid */
+    .hobby-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .hobby-item {
+      background: #f57251;
+      border: 2px solid #000;
+      border-radius: 18px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .hobby-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .hobby-item img {
+      width: 100%;
+      max-width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 2px solid #000;
+      margin-bottom: 15px;
+    }
+
+    .hobby-item h4 {
+      margin: 10px 0 8px;
+      font-size: 18px;
+      color: #ffffff;
+    }
+
+    .hobby-item span {
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+    footer {
+      background: #020617;
+      border-top: 1px solid #1e293b;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+ <h1 id="C4">My Resume</h1>
+<div id="clock"></div>
+</header>
+
+<nav class="topnav">
+  <a href="myresume.html"><button>Home</button></a>
+  <a href="about.html"><button>About Me</button></a>
+  <a href="education.html"><button>Education</button></a>
+  <a href="family.html"><button>Family</button></a>
+  <a href="hobby.html"><button>Hobby</button></a>
+  <a href="gallery1.html"><button>Gallery</button></a>
+  <a href="contact.html"><button>Contact</button></a>
+  <a href="experience.html"><button>Experience</button></a>
+
+</nav>
+
+<div class="container">
+<main class="content">
+
+
+  <div class="exp-card">
+    <h3>Internship at Sumatraa Food Hq</h3>
+
+    <ol>
+      <li>Gained experience in information organization and digital records management.</li>
+      <li>Developed basic web development skills using HTML and CSS.</li>
+      <li>Enhanced discipline, responsibility, and time management through academic tasks.</li>
+    </ol>
+
+    <div class="exp-images">
+      <img src="sum1.jpeg" alt="Academic Work">
+      <img src="kud1.jpg" alt="Group Discussion">
+      <img src="kud2.jpg" alt="Presentation">
+    </div>
+  </div>
+
+
+  <div class="exp-card">
+    <h3>Part-time as Food Delivery</h3>
+
+    <ol>
+      <li>Better time management.</li>
+      <li>Navigation skills.</li>
+      <li>Customer service experience.</li>
+    </ol>
+
+    <div class="exp-images">
+      <img src="sum2.jpeg" alt="Sports Activity">
+      <img src="cedok.jpeg" alt="Outdoor Activity">
+      <img src="cedok1.jpeg" alt="Team Experience">
+    </div>
+  </div>
+<p><a href="#C4"class="button">Go Back</a></p>
+  </main>
+</main>
+</div>
+<script>
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    document.getElementById("clock").innerHTML =
+      hours + ":" + minutes + ":" + seconds;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+
+<footer>
+  © 2025 Muhammad Hazeem | Resume Website
+</footer>
+
+</body>
+</html>

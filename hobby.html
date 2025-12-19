@@ -1,0 +1,262 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobby</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:#e9e6dd;
+      color: #000000;
+    }
+
+    header {
+      background: #000000;
+      padding: 10px 20px;
+      border-bottom: 1px solid #1e293b;
+    }
+
+#clock {
+  color: #f57251;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    .topnav {
+      background: #f57251;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+      border-bottom: 2px solid #000;
+    }
+
+    .topnav a {
+      text-decoration: none;
+    }
+
+    .topnav button {
+      background: #e9e6dd;
+      border: 1px solid #000;
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .topnav button:hover {
+      background: #d6d2c4;
+    }
+
+    .container {
+      min-height: calc(100vh - 140px);
+      padding: 40px 20px;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #000000;
+      border: 1px solid #000000;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #f57251;
+      font-size: 26px;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    /* Hobby Grid */
+    .hobby-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .hobby-item {
+      background: #f57251;
+      border: 2px solid #000;
+      border-radius: 18px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .hobby-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .hobby-item img {
+      width: 100%;
+      max-width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 2px solid #000;
+      margin-bottom: 15px;
+    }
+
+    .hobby-item h4 {
+      margin: 10px 0 8px;
+      font-size: 18px;
+      color: #ffffff;
+    }
+
+    .hobby-item span {
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+    footer {
+      background: #020617;
+      border-top: 1px solid #1e293b;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1 id="C4">My Resume</h1>
+<div id="clock"></div>
+</header>
+
+<nav class="topnav">
+  <a href="myresume.html"><button>Home</button></a>
+  <a href="about.html"><button>About Me</button></a>
+  <a href="education.html"><button>Education</button></a>
+  <a href="family.html"><button>Family</button></a>
+  <a href="hobby.html"><button>Hobby</button></a>
+  <a href="gallery1.html"><button>Gallery</button></a>
+  <a href="contact.html"><button>Contact</button></a>
+  <a href="experience.html"><button>Experience</button></a>
+</nav>
+
+<div class="container">
+  <main class="content">
+
+    <div class="card">
+      <h3>My Hobbies</h3>
+      <p>
+        In my free time, I enjoy activities that help me stay active, relaxed, and mentally refreshed.
+        These hobbies allow me to balance my daily routine while creating meaningful experiences.
+      </p>
+
+      <div class="hobby-grid">
+
+        <div class="hobby-item">
+          <img src="bad.jpg" alt="Badminton">
+          <h4>Badminton</h4>
+          <span>
+            A sport that keeps me fit, improves my reflexes, and strengthens teamwork.
+          </span>
+        </div>
+
+        <div class="hobby-item">
+          <img src="snook.jpg" alt="Snooker">
+          <h4>Snooker</h4>
+          <span>
+            Helps improve focus, patience, and strategic thinking.
+          </span>
+        </div>
+
+        <div class="hobby-item">
+          <img src="mancing.jpg" alt="Fishing">
+          <h4>Fishing</h4>
+          <span>
+            A relaxing activity that teaches patience and appreciation of nature.
+          </span>
+        </div>
+
+        <div class="hobby-item">
+          <img src="ride.jpg" alt="Riding">
+          <h4>Ride</h4>
+          <span>
+            Gives me freedom, adventure, and stress relief while exploring new places.
+          </span>
+        </div>
+<p><a href="#C4"class="button">Go Back</a></p>
+  </main>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script>
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    document.getElementById("clock").innerHTML =
+      hours + ":" + minutes + ":" + seconds;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+
+<footer>
+  © 2025 Muhammad Hazeem | Resume Website
+</footer>
+
+</body>
+</html>
